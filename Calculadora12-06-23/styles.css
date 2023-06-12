@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    box-sizing: content-box;
+}
+
+#pantalla{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 65px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+   
+}
+
+.numerosysignos{
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.numero{
+    width: 45px;
+    height: 45px;   
+    margin: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.enter{
+    width: 285px;
+    height: 45px;
+    margin: 15px;
+}
+
+.numero:hover{
+    background-color: aquamarine;
+}
+
+
+
+
