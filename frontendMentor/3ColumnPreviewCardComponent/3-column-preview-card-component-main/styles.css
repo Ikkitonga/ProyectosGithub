@@ -1,0 +1,91 @@
+.attribution { font-size: 20px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cardsConteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.card{
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    padding: 40px;
+}
+
+
+.cardText{
+    margin-bottom: 60px;
+}
+
+.cardText h3{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    
+}
+
+.cardText p{
+    font-size: 1rem;
+}
+
+.cardButton a{
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.cardButton.sedans a{
+    color: hsl(31, 77%, 52%);
+}
+
+.cardButton.suvs a{
+    color: hsl(184, 100%, 22%);
+}
+
+.cardButton.luxury a{
+    color: hsl(173, 97%, 15%);
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color:  hsl(173, 97%, 15%);
+}
+
+@media screen and (max-width: 768px){
+    .cardsConteiner{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .cardsConteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
