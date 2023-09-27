@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.contenedor{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.imagen-desktop{
+    display: block;
+    width: 350px;
+    height: fit-content;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.imagen-mobile{
+    display: none;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.informacion h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.informacion p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.precios{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.price{
+    font-size: 3rem;
+    font-weight: 600;
+    color: green;
+}
+
+.oldprice{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    color: grey;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.btn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn button{
+    padding: 10px 40px 10px 40px;
+    font-size: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: green;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 320px){
+    .contenedor{
+        flex-direction: column;
+        width: 280px;
+    }
+
+    .imagen-desktop{
+        display: none;
+    }
+
+    .imagen-mobile{
+        display: block;
+        width: 280px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .informacion h4{
+        font-size: 0.8rem;
+    }
+
+    .informacion p{
+        font-size: 0.8rem;
+    }
+
+    .price{
+        font-size: 2.5rem;
+    }
+
+    .oldprice{
+        font-size: 1rem;
+    }
+
+    .btn button{
+        font-size: 1rem;
+    }
+}
+    
+
